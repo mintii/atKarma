@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160827201934) do
+ActiveRecord::Schema.define(version: 20160827210930) do
 
   create_table "maps", force: :cascade do |t|
     t.float    "completer_location"
@@ -26,12 +26,13 @@ ActiveRecord::Schema.define(version: 20160827201934) do
     t.integer  "requester_id"
     t.integer  "completer_id"
     t.string   "category"
-    t.string   "location"
     t.string   "completer_beginning_location"
     t.time     "start_time"
     t.time     "finish_time"
     t.datetime "created_at",                   null: false
     t.datetime "updated_at",                   null: false
+    t.string   "longitude"
+    t.string   "latitude"
   end
 
   create_table "user_tasks", force: :cascade do |t|
