@@ -7,6 +7,6 @@ end
 APP_PATH = File.expand_path('../config/application', __dir__)
 require_relative '../config/boot'
 require 'rails/commands'
-config.active_record.time_zone_aware_types = [:datetime]
+# config.active_record.time_zone_aware_types = [:datetime]
 
 
