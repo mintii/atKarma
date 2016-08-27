@@ -6,6 +6,5 @@ class User < ApplicationRecord
 
 	validates :email_address, :phone_number, uniqueness: true
 
-	has_secure_password
 
 end
